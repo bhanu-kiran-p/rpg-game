@@ -4,7 +4,7 @@ from type import Type
 from moves import Move
 
 # basic types setting
-grass = Type("grass")
+grass = Type("gras")
 fire = Type("fire")
 water = Type("water")
 grass.set_weakness(fire)
@@ -31,7 +31,6 @@ bulbasaur = Pokemon("bulbasaur", grass, 1, 0, 100, bulbasaur_moves)
 squirtle = Pokemon("squirtle", water, 1, 0, 110, squirtle_moves)
 chramander = Pokemon("charmender", fire, 1, 0, 99, chramander_moves)
 
-
 # test trainer settings
-ash = Trainer("ash", 1200, [bulbasaur, bulbasaur, bulbasaur])
+ash = Trainer("ash", 1200, [bulbasaur, squirtle, chramander])
 ash.test_print()

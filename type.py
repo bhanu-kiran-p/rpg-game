@@ -1,5 +1,5 @@
 class Type:
-    def __init__(self, type):
+    def __init__(self, type:str):
         self.type = type
         self.weakness = None
 

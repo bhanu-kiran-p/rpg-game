@@ -1,20 +1,21 @@
 from type import Type
+from moves import Move
 
 
-class Pokemon(Type):
-    def __init__(self, name, type, level, xp, hp, moves):
+class Pokemon:
+    # include the threshold xp for level up later
+    def __init__(
+        self, name: str, type: Type, level: int, xp: int, max_hp: int, moves: list[Move]):
         self.name = name
         self.type = type
         self.level = level
         self.xp = xp
-        self.hp = hp
+        self.current_hp = max_hp
+        self.max_hp = max_hp
         self.moves = moves
 
     def get_type(self):
         return self.type
-
-    def set_weakness(self, weakness):
-        self.type.weakness = weakness
 
     def test_print(self):
         print(
