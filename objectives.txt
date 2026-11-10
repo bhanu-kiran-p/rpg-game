@@ -1,0 +1,7 @@
+focus more on oops
+import the pokemon data from a public data set
+the game mainly consists of two options
+a. catch wild pokemon
+b. battle the trainers to gain xp and increase the level of pokemon
+
+make it as simple as possible
