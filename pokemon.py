@@ -5,7 +5,8 @@ from moves import Move
 class Pokemon:
     # include the threshold xp for level up later
     def __init__(
-        self, name: str, type: Type, level: int, xp: int, max_hp: int, moves: list[Move]):
+        self, name: str, type: Type, level: int, xp: int, max_hp: int, moves: list[Move]
+    ):
         self.name = name
         self.type = type
         self.level = level
@@ -19,8 +20,8 @@ class Pokemon:
 
     def test_print(self):
         print(
-            "name : {}\ntype :{}\nlevel : {}\nxp : {}\nhp : {}".format(
-                self.name, self.type, self.level, self.xp, self.hp
+            "name : {}\ntype :{}\nlevel : {}\nxp : {}\nmax hp : {}".format(
+                self.name, self.type, self.level, self.xp, self.max_hp
             )
         )
         print("--moves--")
